@@ -1530,9 +1530,6 @@ Mark frequent, non-urgent state updates as transitions to maintain UI responsive
 
 **Correct (non-blocking updates):**
 
-<<<<<<< HEAD
-### 0.46 useLatest for Stable Callback Refs
-=======
 **Impact: LOW (stable subscriptions)**
 
 Store callbacks in refs when used in effects that shouldn't re-subscribe on callback changes.
@@ -1568,7 +1565,6 @@ function useWindowEvent(event: string, handler: (e) => void) {
 `useEffectEvent` provides a cleaner API for the same pattern: it creates a stable function reference that always calls the latest version of the handler.
 
 ### 8.2 useLatest for Stable Callback Refs
->>>>>>> dd157cbd26f5c1f1154214035d3f8c9d7fe87a1c
 
 **Impact: LOW (prevents effect re-runs)**
 
